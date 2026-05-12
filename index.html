@@ -25,7 +25,7 @@
 
     function checkValue() {
         let valueType = inputElement.value
-        valueType = inputElement.value.replace('stupid', '****').replace('bastard', '****').replace('fucking', '****').replace('idiot', '****')
+        valueType = inputElement.value.toLowerCase().replaceAll('stupid', '****').replaceAll('bastard', '****').replaceAll('fucking', '****').replaceAll('idiot', '****')
         paragraphTag.innerHTML = valueType
 
 
